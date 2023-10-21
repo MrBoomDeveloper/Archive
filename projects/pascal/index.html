@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>BoomPascal</title>
+	<link rel="stylesheet" href="./css/custom.css" />
+	<script src="./scripts/boom.js"></script>
+	<script src="./scripts/main.js"></script>
+</head>
+<body>
+	<header>
+		<div class="content">
+			<h2>BoomPascal</h2>
+			<a href="#about"><button neon>Об проекте</button></a>
+		</div>
+	</header>
+	<main>
+		<div class="content">
+			<h3 class="heading">Введите свой код</h3>
+			<div class="codeWrapper">
+				<p neon class="input" id="input" contenteditable="true"></p>
+				<p neon class="input" id="result" contenteditable="true"></p>
+				<p id="lineNumber">1<br>2<br>3<br>4</p>
+			</div>
+			<div class="actions">
+				<button neon id="compile">Скомпилировать</button>
+				<button neon id="run">Форматировать</button>
+			</div>
+			<h3 class="heading">Получившийся код</h3>
+			<p neon class="input" id="compilied">Вы еще ничего не скомпилировали. Нажмите на кнопочку компиляции, чтобы сделать это.</p>
+		</div>
+		
+		<div class="content" id="about">
+			<h1>Зачем данный проект был создан?</h1>
+			<p>Дело в том, что мне лень учить pascal. Поэтому я создал свой препроцессор.</p>
+			<p>Ах, ну и еще чтобы попрактиковаться в создании редактора кода, ведь у меня есть еще один проект <a href="https://mrboomdeveloper.github.io/?page=project&id=0"><span color="var">BoomStudio</span></a>, в котором можно будет редактировать код и т.п.</p>
+			<h2>Приложение сделано MrBoomDev</h2>
+			<p>Спасибо, что выбрали именно меня. Мне будет еще приятней если вы оцените мои <a href="https://mrboomdeveloper.github.io/#projects"><span color="var">другие проекты</span></a></p>
+		</div>
+	</main>
+</body>
+</html>

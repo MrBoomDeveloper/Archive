@@ -1,0 +1,13 @@
+body > .wrapper {
+	height: 100%;
+	display: grid;
+	grid-template-rows: 4rem 1fr 4rem;
+}
+
+aside {
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+@import "features/code";

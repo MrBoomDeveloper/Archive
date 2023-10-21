@@ -1,0 +1,41 @@
+#welcome {
+	height: 80vh;
+	display: flex;
+	align-items: center;
+
+	.content {
+		text-align: center;
+		width: min(38rem, 81%);
+		transform: translateY(0);
+	}
+	h1 { font-size: 2.8em }
+	button { padding: 1em 2em }
+	p {
+		font-size: 1.1em;
+		margin: 1em auto 1.2em auto;
+		line-height: 1.6;
+	}
+}
+
+#skills {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(5rem, 7rem));
+	grid-gap: 1rem;
+	margin-top: 2rem;
+}
+
+#faq {
+	margin-top: 1rem;
+	@include flexc(.4rem);
+}
+
+#contact {
+	padding-top: 3rem;
+	background-color: rgba(0, 0, 0, .1);
+
+	.content {
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+	p { margin: 1em 0 1.5em 0 }
+}

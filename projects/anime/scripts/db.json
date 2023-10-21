@@ -1,0 +1,41 @@
+anilist.host = "https://graphql.anilist.co";
+anilist.about = `query ($id: Int) {
+	Media (id: $id, type: ANIME) {
+		id type isAdult format status countryOfOrigin startDate { year }
+		description genres bannerImage averageScore trailer { id site }
+		nextAiringEpisode { airingAt timeUntilAiring } episodes duration
+		title { english } externalLinks { url site icon } tags { name }
+	}
+}`;
+
+const anilibria = {
+	host: "https://dl-20220618-233.anilib.top/public/api/index.php"
+}
+const request_headers = {
+	'Content-Type': 'application/json',
+	'Accept': 'application/json'
+}
+
+/*UNUSED QUERYIES
+
+studios { edges { isMain node { name } } }
+staff { nodes { name image } }
+characters { edges { role name voiceActors { name image } } }
+reviews { nodes { body rating createdAt 
+	user { name avatar { medium } } 
+} }
+relations
+
+*/
+
+util.tags = {
+	ANIME: "Anime", MANGA: "Manga", 
+	FINISHED: "Finished", RELEASING: "Releasing",
+	JP: "Japan"
+}
+
+const message = {
+	error: "Упс... похоже во время выполнения вашего запроса произошла ошибка. Попробуйте еще раз через пару минут.",
+	auth: "Пожалуйста, войдите в свою учётную сеть, чтобы продолжить",
+	no_results: "Похоже, что ничего не найдено по вашему запросу"
+}

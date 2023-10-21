@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Мой профиль</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" /> 
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="style/profile.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap" rel="stylesheet">
+		<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<header id="header">
+			<div id="header-content">
+				<a href="index.html">
+					<h3>Просмотр профиля</h3>
+				</a>
+                <a class="header_icon" href="javascript:logOut();">
+					<img src="images/logout.png">
+					<h2>Выйти из учетной записи</h2>
+				</a>
+			</div>
+		</header>
+		<span id="hdi">.</span>
+		<main>
+			<div id="content" class="bc">
+				<div id="base" class="block">
+					<img id="avatar" src="images/mrboom.jpg">
+					<div id="base-info">
+						<h1>NrBoomDev</h1>
+						<h4>4378dth634987tdh554397s73</h4>
+					</div>
+					<button id="edit_nick">Изменить никнейм</button>
+					<button id="edit_pfp">Изменить фото профиля</button>
+				</div>
+				<div id="char" class="block">
+					<h4>Мой персонаж</h4>
+					<img id="character" src="images/character.png">
+				</div>
+				<div class="stat block">
+					<h4>Шанс победы</h4>
+					<h1>0.00%</h1>
+				</div>
+				<div class="stat block">
+					<h4>Макс. время</h4>
+					<h1>0:00</h1>
+				</div>
+				<div class="stat block">
+					<h4>Пров. времени</h4>
+					<h1>0:00</h1>
+				</div>
+				<div class="stat block">
+					<h4>Получ. монет</h4>
+					<h1>0</h1>
+				</div>
+				<div class="stat block">
+					<h4>Получ. алмазов</h4>
+					<h1>0</h1>
+				</div>
+				<div class="stat block">
+					<h4>Сыгранно игр</h4>
+					<h1>0</h1>
+				</div>
+				<div class="stat block">
+					<h4>Выигранно игр</h4>
+					<h1>0</h1>
+				</div>
+				<div class="stat block">
+					<h4>Проигранно игр</h4>
+					<h1>0</h1>
+				</div>
+				<div class="stat block">
+					<h4>Убито</h4>
+					<h1>0</h1>
+				</div>
+				<div class="stat block">
+					<h4>Смертей</h4>
+					<h1>0</h1>
+				</div>
+			</div>
+		</main>
+		<footer></footer>
+	</body>
+</html>

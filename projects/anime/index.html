@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="x-ua-compatible" content="ie=edge" />
+		<meta name="viewport" content="viewport-fit=cover, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<link rel="stylesheet" href="./styles/boom.css" />
+		<link rel="stylesheet" href="./styles/default.css" />
+		<link rel="stylesheet" href="./styles/custom.css" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+		<script type="text/javascript" src="./scripts/boom.js"></script>
+		<script type="text/javascript" src="./scripts/main.js"></script>
+		<script type="text/javascript" src="./scripts/db.json"></script>
+	</head>
+	<body onload="main.load()">
+		<div class="app">
+			<header>
+				<span class="material-symbols-outlined" onclick="search.open()">search</span>
+				<h2>BoomAnime</h2>
+				<span class="material-symbols-outlined" onclick="profile.open()">account_circle</span>
+			</header>
+			
+			<button class="neon" onclick="anilist.open(1)">Load anime with id 1</button>
+			<button class="neon" onclick="anilist.open(125367)">Load anime with id 125367</button>
+		
+			<div id="popup" class="reveal">
+				<div class="wrapper">
+				<header>
+					<span class="material-symbols-outlined" onclick="main.back()">arrow_back</span>
+					<h2></h2>
+					<span class="material-symbols-outlined" onclick="anilist.options()">more_vert</span>
+				</header>
+					
+				<main>
+					<section id="preview">
+						<img id="banner"/>
+						<div class="shadow"></div>
+						<div class="about">
+							<h1 id="title"></h1>
+							<div id="meta"></div>
+							<div id="episodes"></div>
+							<p id="nextEp"></p>
+							<hr noshade color="#FFE6FF" size="1" />
+							<p id="description"></p>
+							<div id="rating" class="card small">
+								<h3></h3>
+								<div class="info">
+									<h4>Avarage Score</h4>
+									<p>Information obtained from <a href="https://anilist.co" target="_blank">Anilist.co</a></p>
+								</div>
+							</div>
+							<h3>Tags</h3>
+							<div id="tags"></div>
+							<h3>External Links</h3>
+							<div class="tags" id="external"></div>
+						</div>
+						<div id="actions">
+							<button id="watch" class="neon" onclick="anilist.watch(curr)"></button>
+							<button id="trailer" class="neon" onclick="trailer.watch()"><span class="material-symbols-outlined">movie</span></button>
+							<button id="favorite" class="neon"><span class="material-symbols-outlined">favorite</span></button>
+						</div>
+					</section>
+				</main>
+			</div>
+		</div>
+			
+		<div id="messages"></div></div>
+	</body>
+</html>

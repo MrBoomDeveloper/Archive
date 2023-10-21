@@ -1,0 +1,54 @@
+#popup {
+	header {
+		background: rgba(0, 0, 0, 0);
+		width: 100%;
+		position: absolute;
+		z-index: 999;
+	}
+	main {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		overflow: scroll;
+	}
+}
+
+#privacy, #terms {
+	padding: 2rem 0;
+}
+#archive, #branding, #design {
+	padding: 4rem 0;
+}
+:is(#archive, #branding, #design, #privacy, #terms) .cat{
+	margin: 3rem 0 2rem 0;
+}
+.colors { grid-gap: .4rem }
+#design .cat:not(#first) { margin: 0rem 0 2rem 0 }
+
+#privacy, #terms {
+	padding: 3rem 0;
+	
+	h1, h2, h3 {
+		margin: 1em 0 .7em 0;
+		line-height: 1.5;
+		display: block;
+	}
+	.cat {
+		margin-bottom: .6em;
+	}
+	p {
+		display: block;
+		margin-top: .4em;
+		line-height: 1.6;
+	}
+	ul {
+		padding-left: 1rem;
+		list-style-type: disc;
+		margin: .5rem 0;
+	}
+	li {
+		margin: .4em 0;
+		color: var(--text);
+		line-height: 1.6;
+	}
+}

@@ -1,0 +1,35 @@
+.heading {
+	margin: 1em 0 1em 0;
+}
+
+[color=main] { color: #6B9CFF }
+[color=green] {
+	color: #55A866;
+	* { color: #55A866 !important }
+}
+[color=var] { color: var(--primary) }
+[color=default] { color: white }
+
+html {
+	scroll-padding-bottom: 5rem;
+}
+header div {
+	display: flex;
+	align-items: center;
+}
+
+#about {
+	padding: 5vh 0;
+	
+	h1 { margin-bottom: .4em }
+	h2 { margin: 1em 0 .4em 0 }
+	p { line-height: 1.7 }
+}
+
+main {
+	padding-bottom: 2vh;
+}
+
+a span:hover {
+	text-decoration: underline;
+}

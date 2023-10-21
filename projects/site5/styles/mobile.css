@@ -1,0 +1,134 @@
+@media (max-width: 55rem) {
+	.grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.block.noimage .grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 38rem) {
+	.block {
+		padding-top: 10vh;
+		margin-bottom: 0;
+	}
+	.block, .block.swap {
+		grid-template-columns: 1fr;
+	}
+	.block.swap > div:first-child {
+		grid-row: 2;
+		margin: auto;
+	}
+	lottie-player {
+		margin: 5vh auto;
+		float: none !important;
+	}
+	.grid {
+		margin-top: 0.8rem;
+		grid-template-columns: 1fr;
+	}
+	.block.noimage .grid {
+		grid-template-columns: 1fr;
+	}
+	.grid.small {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.grid .card.big {
+		margin-top: 0.5rem;
+	}
+	#skills-block .grid {
+		margin-bottom: 1rem;
+	}
+	#contact {
+		margin-top: 8vh;
+		padding-top: 0;
+		text-align: center;
+		padding-bottom: 8vh;
+	}
+	#contact lottie-player {
+		margin: 5vh auto 0 auto;
+	}
+}
+
+@media (max-width: 30rem) {
+	header #burger {
+		height: 4rem;
+		padding: 1.2rem 0;
+    	float: right;
+		display: grid;
+		align-items: center;
+	}
+	header #burger span {
+		height: 2px;
+		width: 1.8rem;
+		background: var(--category);
+		transition: 0.25s;
+	}
+	#burger.change span:nth-child(1) { transform: rotate(-45deg) translate(-6px, 6px)}
+	#burger.change span:nth-child(2) { opacity: 0 }
+	#burger.change span:nth-child(3) { transform: rotate(45deg) translate(-6px, -6px)}
+	header nav {
+		padding: 1rem 0 2rem 0;
+		width: 100%;
+		overflow: hidden;
+		position: fixed;
+		z-index: -1;
+		left: 0;
+		opacity: 0;
+		background: rgba(17, 7, 31, 0.9);
+		transform: translateY(-100%);
+		transition: transform 0.3s ease, opacity 1s;
+		transition-delay: 0.1s;
+	}
+	header .nav-active {
+		opacity: 1;
+		transform: translateY(3.99rem);
+		transition: transform 0.3s ease, opacity 0s;
+	}
+	header ul {
+		width: 85%;
+		margin: auto;
+	}
+	header li, header ul {
+		float: none;
+	}
+	header li a {
+		float: none;
+		margin-left: 0;
+		font-size: 1.5em;
+		line-height: 2.2;
+	}
+	#banner {
+		margin-bottom: 0.5vh;
+	}
+	main {
+		padding: 25vh 0;
+	}
+	#banner {
+		height: 30vh;
+	}
+	#project {
+		padding-top: 1rem;
+		text-align: center;
+	}
+	#project #actions {
+		margin-top: 1rem;
+		float: none;
+	}
+	#project button {
+		width: 44%;
+	}
+	#project button:hover {
+		margin: 0.2em;
+	}
+	
+	footer {
+		padding: 5vh 0;
+	}
+	#footer-links {
+		grid-template-columns: 1fr;
+	}
+	#footer-links #follow {
+		grid-row: 3;
+	}
+}

@@ -1,0 +1,54 @@
+@import "boom", "default";
+
+.codeWrapper {
+	position: relative;
+	min-height: 75vh;
+	transition: .01s;
+}
+
+#input, #result {
+	position: absolute;
+	top: 0;
+	min-height: 75vh;
+	width: 100%;
+	white-space: break-spaces;
+	tab-size: .8em;
+}
+#input {
+	color: rgba(0, 0, 0, 0);
+	caret-color: white;
+}
+#result {
+	pointer-events: none;
+	user-select: none;
+	background: none;
+	transition: .3s, width 0s;
+}
+#compilied {
+	width: 100%;
+	min-height: 20em;
+}
+#lineNumber {
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: .4em;
+	border: solid rgba(255, 255, 255, .5) 1px;
+	border-radius: .2em;
+	background-color: var(--card-active);
+}
+
+.actions {
+	position: sticky;
+	bottom: 0;
+	left: 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1rem;
+	padding: 1rem 0;
+	background-image: linear-gradient(
+		rgba(0, 0, 0, 0) 0%,
+		rgba(17, 7, 31, .6) 25%
+	);
+}

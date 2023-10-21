@@ -1,0 +1,39 @@
+header {
+    position: static;
+}
+#hdi {
+    opacity: 0;
+}
+#bs {
+    opacity: 0;
+}
+main {
+    padding: 20px;
+}
+h6 {
+    font-size: 16px;
+    margin-left: 2px;
+}
+input {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+button {
+    width: 46%;
+    font-size: 15px;
+}
+footer {
+    height: 500px;
+    background-color: #121212;
+}
+
+
+@media screen and (orientation:landscape) {
+    main {
+        padding: 35px;
+    }
+    button {
+        width: 195px;
+        font-size: 11px;
+    }
+}

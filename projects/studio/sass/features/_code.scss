@@ -1,0 +1,37 @@
+#codeWrapper {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	overflow: scroll;
+}
+
+#codeInput, #codeResult {
+	height: 100%;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	white-space: break-spaces;
+	tab-size: .8em;
+	border: none;
+}
+
+#codeInput {
+	color: rgba(0, 0, 0, 0);
+	caret-color: white;
+}
+#codeResult {
+	pointer-events: none;
+	user-select: none;
+	background: none;
+	transition: .3s, width 0s;
+}
+
+#codeLines {
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: .4em;
+	border-radius: .2em;
+	background-color: var(--panel);
+}

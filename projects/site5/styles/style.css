@@ -1,0 +1,7 @@
+.reveal {
+	transform: translateY(4rem);
+}
+.active {
+	opacity: 1;
+	transform: translateY(0);
+}

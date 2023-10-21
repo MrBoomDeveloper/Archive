@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Вход в учетную запись</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" /> 
+		<link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style/auth.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap" rel="stylesheet">
+		<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<header id="header">
+			<div id="header-content">
+				<h3>Вход в учетную запись</h3>
+			</div>
+		</header>
+		<span id="hdi">.</span>
+        <main>
+			<div class="bc">
+          		<h6>Почта</h6>
+        	    <input id="email">
+       	    	<h6>Пароль</h6>
+       	    <input type="password" id="password">
+				<div id="buttons">
+         	 	  	<button onclick="auth();">ВОЙТИ</button>
+					<span id="bs">....</span>
+         	  		<button onclick="auth(`new`);">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+				</div>
+			</div>
+    	</main>
+		<footer></footer>
+	</body>
+</html>
